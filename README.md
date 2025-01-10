@@ -97,7 +97,7 @@ GOOGLE_CALLBACK_URL=http://localhost:3000/auth/google/redirect
 
 # Session
 SESSION_SECRET=your_session_secret
-
+```
 Replace the placeholder values with your actual configuration details.
 
 ## License
