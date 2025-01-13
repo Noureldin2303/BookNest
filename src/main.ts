@@ -24,7 +24,7 @@ async function bootstrap() {
       secret: configurations().session.secret,
       resave: false,
       saveUninitialized: false,
-      cookie: { maxAge: 60000 },
+      cookie: { maxAge: 60000, secure: true, httpOnly: true },
     }),
   );
 
