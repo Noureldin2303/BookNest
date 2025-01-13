@@ -12,7 +12,8 @@ async function bootstrap() {
   app.setGlobalPrefix('api');
   app.use(
     helmet({
-      contentSecurityPolicy: false,
+      contentSecurityPolicy: true,
+      frameguard: { action: 'sameorigin' },
       originAgentCluster: true,
     }),
   );
